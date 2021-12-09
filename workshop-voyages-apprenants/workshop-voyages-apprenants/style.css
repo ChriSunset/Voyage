@@ -1,0 +1,101 @@
+/***************Header*************/
+
+header{
+     background: linear-gradient(rgb(45, 253, 149), rgb(34,193,195));
+     margin: 0; 
+}
+
+.rect{
+    display: flex;
+    margin: 10px;
+    border : 2px solid rgb(88, 88, 88);
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    margin: 2%;
+}
+
+nav{
+    position: absolute;
+    top : 40px;
+    right: 24px ;
+}
+
+nav a{
+    margin: 30px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.inlineB{
+    display: inline-block;
+}
+
+/************************************* MAIN *************************************************/
+
+/************Rectangle pour les 3 pays**********/
+#Japon,#Thailande,#Inde{
+    height: 400px;
+    width: 1000px;
+    margin: 15px;
+    padding: 30px;
+    display:flex;
+    flex-direction: row;
+    border-radius: 3%;
+}
+
+/************Mise en forme pour chaque pays**********/
+
+/************ Japon *************/
+
+#Japon{
+    display:flex;
+    justify-content: left;
+    background: linear-gradient(rgb(86,166,241),rgb(191,129,148));
+}
+
+#Japon h1,#Japon p{
+    text-align: left;
+}
+
+/************ Thailande *************/
+
+#Thailande {
+    display:flex;
+    justify-content: center;
+    background: linear-gradient(rgb(70,134,195),rgb(97,227,194));
+}
+#Thailande h1,#Thailande p{
+    text-align: center;
+}
+/************ Inde *************/
+
+#Inde{
+    display:flex;
+    justify-content: right;
+    background: linear-gradient(rgb(92,144,181),rgb(226,132,23));
+}
+
+#Inde h1,#Inde p{
+    text-align: right;
+}
+.images{
+    display: block;
+    margin: 5%;
+}
+
+img{
+    border-radius: 50% 50% 50% 50%;
+    height: 300px; 
+    width: 300px;
+}
+
+footer{
+    background: linear-gradient(rgb(45, 253, 149), rgb(34,193,195));
+}
+

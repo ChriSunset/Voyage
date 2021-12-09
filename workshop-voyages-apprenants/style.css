@@ -1,11 +1,52 @@
-/******************** Responsive ****************
-@media(min-width: 20%) and (max-width: 100%)
-{*/
+/********************** Google font**************************/
 
+/******************** Responsive ****************/
+@media(min-width: 200px) and (max-width: 1800px){
+
+*{
+    box-sizing: border-box;
+}
+
+    img,
+	blockquote,
+	.text,
+	input,
+	iframe,
+	video {
+		max-width: 100%;
+	}
+
+    header,footer,div,section,.rect,#Japon,#Thailande,#Inde.images,img{
+		height: auto;
+        width: auto;
+	}
+
+    .text,
+	h1,
+    div
+	td,
+	th,
+	code,
+	p,
+	samp {
+		-webkit-hyphens: auto; /* césure propre */
+		-moz-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word; /* passage à la ligne forcé */
+	}
+
+    html {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+     
+/********************* CSS *******************/
 body{
     color:white;
     font-family: 'Caveat Brush', cursive;
     margin:0;
+    width: auto;
+    padding: 0;	
 }
 
 /************************ Header *****************************/
@@ -34,7 +75,6 @@ marquee{
 .rect{
     display: flex;
     margin: 10px;
-    border : 2px solid rgb(88, 88, 88);
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
@@ -70,6 +110,7 @@ nav a{
     flex-direction: row;
     border-radius: 3%;
     align-items: center;
+    font-size: 15px;
 }
 
 /************Mise en forme pour chaque pays**********/
@@ -77,9 +118,16 @@ nav a{
 /************ Japon *************/
 
 #Japon{
-    display:flex;
     justify-content: left;
     background: linear-gradient(rgb(86,166,241),rgb(191,129,148));
+}
+
+#Japon .text, #Inde .text{
+    margin-left:90px;
+}
+
+#Thailande .text{
+    margin-right:90px;
 }
 
 #Japon h1,#Japon p{
@@ -88,7 +136,6 @@ nav a{
 
 /************ Thailande *************/
 #Thailande {
-    display:flex;
     justify-content: center;
     background: linear-gradient(rgb(70,134,195),rgb(97,227,194));
 }
@@ -99,7 +146,6 @@ nav a{
 
 /************ Inde *************/
 #Inde{
-    display:flex;
     justify-content: right;
     background: linear-gradient(rgb(92,144,181),rgb(226,132,23));
 }
@@ -109,8 +155,9 @@ nav a{
 }
 
 .images{
-    display: block;
+    display: flex;
     margin: 5%;
+    align-items: center;
 }
 
 .images img{
@@ -137,4 +184,6 @@ footer{
     list-style-type: none;
     margin:10px;
     color: white;
+}
+
 }
